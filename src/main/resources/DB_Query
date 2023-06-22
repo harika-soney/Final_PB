@@ -1,0 +1,13 @@
+SHOW DATABASES;
+
+create database budgetdb;
+
+CREATE TABLE budgetdb.BudgetDetails (
+  Id INT PRIMARY KEY AUTO_INCREMENT,
+  UserName VARCHAR(255) NOT NULL,
+  Age INT NOT NULL,
+  AnnualSalary INT NOT NULL
+);
+commit;
+
+select * from budgetdb.BudgetDetails;
